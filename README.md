@@ -20,4 +20,4 @@ class Ping(CommandBase):
         """ your code..."""
    
 ```
-![](https://imgur.com/yahsjvY)
+![](https://github.com/TeleApplications/PyTeleCommands/blob/main/assets/command.gif)
