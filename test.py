@@ -11,7 +11,9 @@ class Ping(CommandBase):
     @RegisterOption("-ip")  # command option in terminal
     def option_ip(self, ip_address):
         """ your code..."""
-
+    @RegisterOption("-ttl")
+    def option_ttl(self):
+        """your code..."""
     def execute(self):  # method executed as the latest
         """ your code..."""
 
