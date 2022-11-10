@@ -20,4 +20,4 @@ class Ping(CommandBase):
         """ your code..."""
    
 ```
-![](https://imgur.com/a/wCbLKWD)
+![](https://imgur.com/yahsjvY)
