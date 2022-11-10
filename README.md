@@ -1,5 +1,7 @@
 # PyTeleCommands
 Command interface in python
+
+![](https://github.com/TeleApplications/PyTeleCommands/blob/main/assets/command.gif)
 ```python
 
 # Test command
@@ -20,4 +22,3 @@ class Ping(CommandBase):
         """ your code..."""
    
 ```
-![](https://github.com/TeleApplications/PyTeleCommands/blob/main/assets/command.gif)
