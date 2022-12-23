@@ -1,20 +1,8 @@
 from functools import wraps
 
-import errors.errors
-from commands.command_base import CommandBase
-
-
-class CommandDictionary:
-    command_dict: dict = dict()
-    command_name: str
-
-    @classmethod
-    def update_dictionary(cls, key, value) -> None:
-        cls.command_dict.setdefault(cls.command_name, {}).update({key: value})
-
-    @classmethod
-    def set_command_name(cls, command_name: str) -> None:
-        cls.command_name = command_name
+from CommandDict.command_dictionary import CommandDictionary
+from Commands.command_base import CommandBase
+from Errors import errors
 
 
 class RegisterCommand:
@@ -23,7 +11,7 @@ class RegisterCommand:
 
     def __call__(self, class_instance):
         if not issubclass(class_instance, CommandBase):
-            raise errors.errors.BadCommandStructure(class_instance, CommandBase)
+            raise errors.BadCommandStructure(class_instance, CommandBase)
         CommandDictionary.update_dictionary("class_instance", class_instance)
         return class_instance
 

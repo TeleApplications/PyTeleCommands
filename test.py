@@ -1,6 +1,6 @@
-from commands.command_base import CommandBase
-from commands.register_command import RegisterCommand, RegisterOption
-from cli.terminal import Terminal
+from Commands.command_base import CommandBase
+from Commands.register_command import RegisterCommand, RegisterOption
+from Cli.terminal import Terminal
 
 
 @RegisterCommand("ping")  # command name in terminal
@@ -33,4 +33,4 @@ class IPConfig(CommandBase):
 
 if __name__ == '__main__':
     t = Terminal()
-    t.run()
+    t.run_forever()
